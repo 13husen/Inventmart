@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="container" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.inventmart.controller.SalesNewController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="536.0" prefWidth="709.0" stylesheets="@../css/application.css">
+         <children>
+            <Pane layoutX="-10.0" layoutY="-9.0" prefHeight="61.0" prefWidth="728.0" style="-fx-background-color: #1e88e5;" styleClass="product-detail-header">
+               <children>
+                  <JFXButton fx:id="cancelButton" layoutX="505.0" layoutY="20.0" onAction="#onCancel" prefHeight="27.0" prefWidth="90.0" ripplerFill="#7986cb" text="%app.cancel" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton fx:id="helpButton" layoutX="597.0" layoutY="20.0" onAction="#onHelp" prefHeight="27.0" prefWidth="90.0" ripplerFill="#7986cb" text="%app.help" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton fx:id="saveButton" disable="true" layoutX="408.0" layoutY="20.0" onAction="#onSave" prefHeight="27.0" prefWidth="90.0" ripplerFill="#4db6ac" style="-fx-background-color: #009688;" text="%app.save" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <HBox alignment="BASELINE_LEFT" layoutX="23.0" layoutY="23.0" prefHeight="30.0" prefWidth="380.0" spacing="5.0">
+                     <children>
+                        <Label text="Transaksi" textFill="#e0e0e0">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label text="/ Buat Purchase Order" textFill="#fafafa">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </Pane>
+            <ScrollPane layoutX="-6.0" layoutY="52.0" prefHeight="561.0" prefWidth="721.0">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefWidth="718.0">
+                     <children>
+                        <Pane layoutX="23.0" layoutY="47.0" prefHeight="1.0" prefWidth="672.0" style="-fx-background-color: #EEEEEE;" />
+                        <Pane layoutX="25.0" layoutY="207.0" prefHeight="1.0" prefWidth="672.0" style="-fx-background-color: #EEEEEE;" />
+                        <VBox fx:id="itemsContainer" layoutX="13.0" layoutY="138.0" prefHeight="315.0" prefWidth="709.0" />
+                        <Pane fx:id="paneBottomItems" layoutX="13.0" layoutY="138.0" prefHeight="280.0" prefWidth="715.0">
+                           <children>
+                              <JFXButton fx:id="addItemButton" layoutX="270.0" layoutY="84.0" onAction="#onAddAnotherItem" prefHeight="39.0" prefWidth="176.0" ripplerFill="#4db6ac" style="-fx-background-color: #64dd17;" text="Tambah Produk" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="31.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/plus.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </JFXButton>
+                              <JFXTextArea fx:id="noteTextArea" focusColor="#009688" labelFloat="true" layoutX="13.0" layoutY="140.0" prefHeight="98.0" prefWidth="665.0" promptText="Note" />
+                              <Pane layoutY="1.0" prefHeight="0.0" prefWidth="690.0" style="-fx-background-color: #EEEEEE;" />
+                              <Pane prefHeight="1.0" prefWidth="260.0" style="-fx-background-color: #EEEEEE;" />
+                              <HBox alignment="BOTTOM_LEFT" layoutX="76.0" layoutY="27.0" prefHeight="30.0" prefWidth="577.0" spacing="5.0" />
+                           </children>
+                        </Pane>
+                        <HBox alignment="BOTTOM_LEFT" layoutX="21.0" layoutY="15.0" prefHeight="30.0" prefWidth="577.0" spacing="5.0">
+                           <children>
+                              <Label text="Purchase Order" textFill="#212121">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Pane layoutX="34.0" layoutY="123.0" prefHeight="1.0" prefWidth="672.0" style="-fx-background-color: #EEEEEE;" />
+                        <Label fx:id="purchaseCode" alignment="TOP_RIGHT" layoutX="569.0" layoutY="15.0" prefHeight="30.0" prefWidth="128.0" text="S000001" textFill="#00796b">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <JFXComboBox fx:id="supplierComboBox" focusColor="#009688" labelFloat="true" layoutX="23.0" layoutY="66.0" prefHeight="25.0" prefWidth="189.0" promptText="Pilih Supplier" />
+                        <JFXComboBox fx:id="statusComboBox" layoutX="256.0" layoutY="66.0" prefHeight="31.0" prefWidth="224.0" promptText="Pilih Status" visible="false">
+                           <items>
+                              <FXCollections fx:factory="observableArrayList">
+                                 <String fx:value="Gagal" />
+                                 <String fx:value="Sukses" />
+                              </FXCollections>
+                           </items>
+                        </JFXComboBox>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

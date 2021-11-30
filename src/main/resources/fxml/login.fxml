@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="702.0" style="-fx-background-color: #e0e0e0;" stylesheets="@../css/application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.inventmart.controller.LoginController">
+   <children>
+      <Pane layoutX="126.0" layoutY="106.0" prefHeight="495.0" prefWidth="451.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 9; -fx-background-insets: 2; -fx-effect: dropshadow(three-pass-box, derive(grey, -10%), 10, 0, 1, 2);">
+         <children>
+            <JFXTextField fx:id="emailTextField" focusColor="#009688" labelFloat="true" layoutX="54.0" layoutY="141.0" prefHeight="36.0" prefWidth="343.0" promptText="Email">
+               <font>
+                  <Font name="Poppins Regular" size="15.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton fx:id="loginButton" disable="true" layoutX="88.0" layoutY="409.0" onAction="#onLogin" prefHeight="48.0" prefWidth="278.0" ripplerFill="#1e88e5" style="-fx-background-color: #1e88e5;" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="Poppins Regular" size="19.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Label fx:id="errorLabel" alignment="CENTER" layoutX="14.0" layoutY="361.0" prefHeight="36.0" prefWidth="421.0" text="User does not found, try again." textFill="RED" visible="false">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Text layoutX="87.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login Invetmart" textAlignment="CENTER" wrappingWidth="278.0000035613775">
+               <font>
+                  <Font name="Poppins Regular" size="21.0" />
+               </font>
+            </Text>
+            <JFXCheckBox fx:id="showPasswordCheckBox" checkedColor="#009688" layoutX="398.0" layoutY="229.0" prefHeight="23.0" prefWidth="29.0" text=" ">
+               <font>
+                  <Font name="Poppins Regular" size="15.0" />
+               </font>
+            </JFXCheckBox>
+            <JFXTextField fx:id="passwordTextFieldShow" layoutX="55.0" layoutY="224.0" prefHeight="33.0" prefWidth="343.0" promptText="Password">
+               <font>
+                  <Font name="Poppins Regular" size="15.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="passwordTextField" layoutX="55.0" layoutY="224.0" prefHeight="33.0" prefWidth="343.0" promptText="Password">
+               <font>
+                  <Font name="Poppins Regular" size="15.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXComboBox fx:id="roleComboBox" layoutX="55.0" layoutY="298.0" prefHeight="31.0" prefWidth="343.0" promptText="Login sebagai : " />
+         </children>
+      </Pane>
+      <ImageView fitHeight="113.0" fitWidth="333.0" layoutX="185.0" layoutY="26.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/invenmart.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="207.0" layoutY="626.0" text="\@ 2021 - PT. Indomarco Prismatama">
+         <font>
+            <Font name="Poppins Regular" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

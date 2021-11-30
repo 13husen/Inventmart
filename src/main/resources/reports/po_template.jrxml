@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="sales_template" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="7b7403dc-960c-4574-93d7-ed48ed865ddf">
+	<property name="ireport.zoom" value="1.9487171000000014"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<field name="code" class="java.lang.String"/>
+	<field name="qty" class="java.lang.String"/>
+	<field name="note" class="java.lang.String"/>
+	<field name="status" class="java.lang.String"/>
+	<field name="timestamp" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<rectangle>
+				<reportElement x="-24" y="-22" width="599" height="101" backcolor="#3F51B5" uuid="6ed54709-57d9-4d1f-b15a-7bd9d8c7c806"/>
+				<graphicElement>
+					<pen lineColor="#3F51B5"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="10" y="0" width="334" height="41" forecolor="#FFFFFF" uuid="4b524142-f79a-41e2-a195-bad5f207d246"/>
+				<textElement>
+					<font size="30"/>
+				</textElement>
+				<text><![CDATA[Inventmart]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="38" width="237" height="41" forecolor="#EBEBEB" uuid="ff24c1b4-8c4e-4232-a149-dd3c6f4b34b6"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[Laporan Purchase Order]]></text>
+			</staticText>
+			<image>
+				<reportElement x="394" y="6" width="161" height="51" uuid="7d2ccc43-fcca-409d-b9a9-c9b5e2577318"/>
+				<imageExpression><![CDATA["C:\\Users\\husen\\malik\\project\\java\\java_dashboard\\src\\main\\resources\\images\\invenmart.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="8" width="100" height="20" uuid="e29b7ad0-27f3-4a94-a605-465a86a0a68e"/>
+				<text><![CDATA[Tanggal Laporan : ]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="86" y="8" width="100" height="20" uuid="b88c4bcc-04d1-4750-a541-92aec99bef1e"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="27" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="555" height="20" backcolor="#009688" uuid="841474d7-46ba-4f48-86bd-8678fc861cbb"/>
+				<graphicElement>
+					<pen lineColor="#009688"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="0" width="50" height="20" forecolor="#FFFFFF" uuid="d4918b13-8a03-4a76-b4c8-827ecf03ae02"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Kode PO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="0" width="120" height="20" forecolor="#FFFFFF" uuid="78d98f42-eb0e-4841-bdf0-669ae2aef1cf"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Note]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="220" y="0" width="130" height="20" forecolor="#FFFFFF" uuid="743fa40c-a63a-4f41-878e-408383e758ec"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Status]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="340" y="0" width="200" height="20" forecolor="#FFFFFF" uuid="743fa40c-a63a-4f41-878e-408383e758ec"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Timestamp]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="50" height="20" uuid="0b546605-fa08-4f0b-b7c6-4c765357f226"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{code}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="100" y="0" width="120" height="20" uuid="4f1de192-953c-44e6-8cdc-cdb1b3609900"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{note}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="220" y="0" width="130" height="20" uuid="487720b8-6aef-4473-a9da-8c61653fc38d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{status}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="350" y="0" width="200" height="20" uuid="487720b8-6aef-4473-a9da-8c61653fc38d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{timestamp}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

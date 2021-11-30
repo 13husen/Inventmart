@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1020.0" style="-fx-background-color: #e0e0e0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.inventmart.controller.RootController">
+   <children>
+      <Pane layoutX="-4.0" layoutY="-7.0" prefHeight="760.0" prefWidth="273.0" style="-fx-background-color: #FFFFFF; -fx-effect: dropshadow(three-pass-box, derive(grey, -10%), 10, 0, 1, 2);">
+         <children>
+            <JFXButton fx:id="dashboardButton" alignment="CENTER" contentDisplay="TOP" layoutX="3.0" layoutY="146.0" onAction="#onDashboardAction" prefHeight="75.0" prefWidth="270.0" ripplerFill="#7986cb" style="-fx-border-color: #EEEEEE; -fx-border-width: 1;" text="%dashboard.pathTitle" textAlignment="RIGHT" textFill="#2e2323">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <padding>
+                  <Insets bottom="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="Poppins Regular" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="inventoryButton" alignment="CENTER" contentDisplay="TOP" layoutX="2.0" layoutY="524.0" onAction="#onInvetoryAction" prefHeight="75.0" prefWidth="270.0" ripplerFill="#7986cb" style="-fx-border-color: #EEEEEE; -fx-border-width: 1;" text="%inventory.pathTitle" textAlignment="CENTER" textFill="#2e2323">
+               <font>
+                  <Font name="Poppins Regular" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <padding>
+                  <Insets bottom="10.0" top="10.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="transactionButton" alignment="CENTER" contentDisplay="TOP" layoutX="3.0" layoutY="336.0" onAction="#onTransactionAction" prefHeight="75.0" prefWidth="270.0" ripplerFill="#7986cb" style="-fx-border-color: #EEEEEE; -fx-border-width: 1;" text="%transaction.pathTitle" textAlignment="CENTER" textFill="#2e2323">
+               <font>
+                  <Font name="Poppins Regular" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="clientButton" alignment="CENTER" contentDisplay="TOP" layoutX="3.0" layoutY="433.0" onAction="#onClientsAction" prefHeight="75.0" prefWidth="270.0" ripplerFill="#7986cb" style="-fx-border-color: #EEEEEE; -fx-border-width: 1;" text="%clients.pathTitle" textAlignment="CENTER" textFill="#2e2323">
+               <font>
+                  <Font name="Poppins Regular" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Pane layoutX="9.0" layoutY="687.0" prefHeight="2.0" prefWidth="258.0" style="-fx-background-color: #eeeeee;" />
+            <JFXButton alignment="CENTER" contentDisplay="TOP" layoutX="3.0" layoutY="238.0" onAction="#onReportsAction" prefHeight="75.0" prefWidth="270.0" ripplerFill="#7986cb" style="-fx-border-color: #EEEEEE; -fx-border-width: 1;" text="%reports.pathTitle" textAlignment="CENTER" textFill="#2e2323">
+               <font>
+                  <Font name="Poppins Regular" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <ImageView fitHeight="75.0" fitWidth="192.0" layoutX="41.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/invenmart.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="dashboardImage"  fitHeight="45.0" fitWidth="45.0" layoutX="19.0" layoutY="161.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/dashboard.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="inventoryImage" fitHeight="50.0" fitWidth="45.0" layoutX="19.0" layoutY="539.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/inventory.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="transactionImage" fitHeight="45.0" fitWidth="45.0" layoutX="19.0" layoutY="351.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/transaction.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="clientImage" fitHeight="45.0" fitWidth="45.0" layoutX="19.0" layoutY="443.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/person.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="reportImage" fitHeight="45.0" fitWidth="45.0" layoutX="19.0" layoutY="253.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/report.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="45.0" fitWidth="63.0" layoutX="158.0" layoutY="701.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/exit.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="45.0" fitWidth="53.0" layoutX="71.0" layoutY="701.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/help.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="reportButton" alignment="BOTTOM_CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="64.0" layoutY="701.0" onAction="#onAbout" prefHeight="45.0" prefWidth="57.0" ripplerFill="#7986cb" textAlignment="CENTER" textFill="#fffdfd">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton alignment="BOTTOM_CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="151.0" layoutY="701.0" onAction="#onLogout" prefHeight="54.0" prefWidth="57.0" ripplerFill="#7986cb" textAlignment="CENTER" textFill="#fffdfd">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </Pane>
+      <AnchorPane fx:id="rootPane" layoutX="289.0" layoutY="28.0" prefHeight="689.0" prefWidth="700.0" style="-fx-background-color: #FFFF; -fx-effect: dropshadow(three-pass-box, derive(grey, -10%), 10, 0, 1, 2); -fx-background-radius: 4;" />
+   </children>
+</AnchorPane>

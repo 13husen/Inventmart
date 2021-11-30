@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="689.0" prefWidth="709.0" style="-fx-background-color: #FFFFF;" stylesheets="@../css/application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.inventmart.controller.DashboardController">
+   <children>
+      <Pane layoutY="-6.0" prefHeight="61.0" prefWidth="709.0" style="-fx-background-color:  #1e88e5;" styleClass="product-detail-header" />
+      <Pane layoutX="153.0" layoutY="552.0" prefHeight="93.0" prefWidth="205.0" style="-fx-background-color: #9C27B0; -fx-background-radius: 5;">
+         <children>
+            <Label fx:id="salesLabel" alignment="CENTER_RIGHT" layoutX="133.0" layoutY="10.0" prefHeight="41.0" prefWidth="37.0" textAlignment="RIGHT" textFill="WHITE">
+               <font>
+                  <Font size="34.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="57.0" layoutY="55.0" prefHeight="25.0" prefWidth="98.0" text="Purchase Order" textFill="WHITE">
+               <font>
+                  <Font name="Poppins Regular" size="15.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="50.0" fitWidth="47.0" layoutX="10.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/sale.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="19.0" layoutY="230.0" prefHeight="1.0" prefWidth="672.0" style="-fx-background-color: #EEEEEE;" />
+<!--      <LineChart fx:id="salesChart" layoutX="24.0" layoutY="243.0" prefHeight="428.0" prefWidth="663.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>-->
+      <HBox alignment="BASELINE_LEFT" layoutX="23.0" layoutY="23.0" prefHeight="30.0" prefWidth="436.0" spacing="5.0">
+         <children>
+            <Label text="%app.path" textFill="#e0e0e0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label text="%dashboard.pathTitle" textFill="#fafafa">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="BOTTOM_LEFT" layoutX="19.0" layoutY="196.0" prefHeight="30.0" prefWidth="577.0" spacing="5.0" />
+      <ImageView fitHeight="240.0" fitWidth="177.0" layoutX="31.0" layoutY="218.0">
+         <image>
+            <Image url="@../images/icon.PNG" />
+         </image>
+      </ImageView>
+      <Pane layoutX="249.0" layoutY="276.0" prefHeight="158.0" prefWidth="436.0" style="-fx-background-color: #ffffff; -fx-effect: dropshadow(three-pass-box, derive(grey, -10%), 10, 0, 1, 2); -fx-background-radius: 15;">
+         <children>
+            <Label fx:id="dashboard_user" layoutX="14.0" layoutY="7.0" prefHeight="40.0" prefWidth="385.0" text="Halo Hussein !">
+               <font>
+                  <Font name="Poppins Regular" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="58.0" text="Selamat datang di Inventmart !">
+               <font>
+                  <Font name="Poppins Regular" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="dashboard_role" alignment="CENTER" layoutX="20.0" layoutY="100.0" style="-fx-background-color: #64dd17; -fx-background-radius: 4;" text="Admin" textFill="WHITE">
+               <font>
+                  <Font name="Poppins Regular" size="20.0" />
+               </font>
+               <padding>
+                  <Insets bottom="5.0" left="13.0" right="13.0" top="5.0" />
+               </padding>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="387.0" layoutY="552.0" prefHeight="93.0" prefWidth="177.0" style="-fx-background-color: #F44336; -fx-background-radius: 5;">
+         <children>
+            <Label fx:id="usersLabel" alignment="CENTER_RIGHT" layoutX="133.0" layoutY="10.0" prefHeight="41.0" prefWidth="37.0" textFill="WHITE">
+               <font>
+                  <Font size="34.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="57.0" layoutY="54.0" prefHeight="25.0" prefWidth="108.0" text="User" textFill="WHITE">
+               <font>
+                  <Font name="Poppins Regular" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="50.0" fitWidth="47.0" layoutX="10.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/persons.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="762.0" style="-fx-background-color: #e0e0e0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.inventmart.controller.AboutController">
+   <children>
+      <Pane layoutX="188.0" layoutY="25.0" prefHeight="200.0" prefWidth="1.0" style="-fx-background-color: #EEEEEE;" />
+      <JFXButton fx:id="okButton" layoutX="312.0" layoutY="433.0" onAction="#onOk" prefHeight="44.0" prefWidth="138.0" ripplerFill="#4db6ac" style="-fx-background-color: #009688;" text="Kembali" textFill="WHITE">
+         <font>
+            <Font name="Poppins Regular" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Pane layoutX="155.0" layoutY="108.0" prefHeight="312.0" prefWidth="471.0" style="-fx-background-color: #ffffff; -fx-effect: dropshadow(three-pass-box, derive(grey, -10%), 10, 0, 1, 2); -fx-background-insets: 1; -fx-background-radius: 6;">
+         <children>
+            <Label layoutX="179.0" layoutY="14.0" prefHeight="34.0" prefWidth="169.0" text="Kelompok 4 :">
+               <font>
+                  <Font name="Poppins Regular" size="18.0" />
+               </font>
+            </Label>
+            <JFXTextArea editable="false" layoutX="11.0" layoutY="74.0" prefHeight="230.0" prefWidth="455.0" text="MUHAMMAD MALIK HUSSEIN                             201843502817 &#10;ANDY NUGROHO                                                  201843500287&#10;AMALIO ALLAN FERDHIAN                                   201843501662 &#10;DEBBY MAFTUH ANGGARA                                 201843501582 &#10;FAJAR FITRIANTO                                                 201843500253 &#10;BANI NUR FAOZI                                                   201843401116 &#10;ILVAN SUTARYO                                                   201843502004 &#10;TRI YUWONO                                                        201843501233">
+               <font>
+                  <Font name="Poppins Regular" size="15.0" />
+               </font>
+            </JFXTextArea>
+         </children>
+      </Pane>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="291.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/invenmart.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
