@@ -1,29 +1,9 @@
-## Stuffs-Admin - Inventory Management in JavaFX for Desktop with Material Design
-
-[![Apache License 2](https://img.shields.io/badge/license-ASF2-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0.txt)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/d113af0da84b4ab9b17b8ffc29c58ecf?branch=admin-javafx)](https://www.codacy.com/app/tiagohs/stuffs-admin?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=tiagohs/stuffs-admin&amp;utm_campaign=Badge_Grade)
+## Inventmart
 
 <p>
 Simple Desktop application for Inventory Management with Material Design, builded with Spring Boot, Hibernate and JavaFX.
 </p>
 
-<p align="center">
-  <img src="https://github.com/tiagohs/spring-javafx-material-design-admin/blob/master/screens/apresentation.png" width="650" height="500">
-</p>
-
-### Features
-
-<ul>
-  <li>Internacionalization: Portuguese Brazil or English</li>
-  <li>Basic Authentication with User and Admin roles</li>
-  <li>Clean & Simple Design</li>
-  <li>Well Organized Code</li>
-  <li>Model-View-Controller (MVC) Pattern</li>
-  <li>Beautiful Graphic with animation</li>
-  <li>Reports to save in PDF with Jasper Reports</li>
-  <li>Easy to customize and for include more features</li>
-  <li>Tables with Search, edit and delete features</li>
-</ul>
 
 ### User Default: <br/>
 
@@ -54,13 +34,13 @@ Simple Desktop application for Inventory Management with Material Design, builde
 ## Screens
 
 <p align="center">
-<img src="https://github.com/tiagohs/spring-javafx-material-design-admin/blob/master/screens/painel.png" width="430" height="350"> <img src="https://github.com/tiagohs/spring-javafx-material-design-admin/blob/master/screens/inventory-search.png" width="430" height="350">
+<img src="https://github.com/tiagohs/spring-javafx-material-design-admin/blob/master/screens/painel.png" width="430" height="350"> <img src="https://raw.githubusercontent.com/13husen/Inventmart/master/screens/kkp1.jpeg" width="430" height="350">
 </p>
 <p align="center">
-<img src="https://github.com/tiagohs/spring-javafx-material-design-admin/blob/master/screens/new-employee.png" width="430" height="350"> <img src="https://github.com/tiagohs/spring-javafx-material-design-admin/blob/master/screens/report-pdf.png" width="430" height="350">
+<img src="https://github.com/tiagohs/spring-javafx-material-design-admin/blob/master/screens/new-employee.png" width="430" height="350"> <img src="https://raw.githubusercontent.com/13husen/Inventmart/master/screens/kkp2.jpeg" width="430" height="350">
 </p>
 <p align="center">
-<img src="https://github.com/tiagohs/spring-javafx-material-design-admin/blob/master/screens/reports.png" width="430" height="350"> <img src="https://github.com/tiagohs/spring-javafx-material-design-admin/blob/master/screens/new-product.png" width="430" height="350">
+<img src="https://github.com/tiagohs/spring-javafx-material-design-admin/blob/master/screens/reports.png" width="430" height="350"> <img src="https://raw.githubusercontent.com/13husen/Inventmart/master/screens/kkp3.jpeg" width="430" height="350">
 </p>
 
 
